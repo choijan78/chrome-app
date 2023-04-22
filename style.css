@@ -1,0 +1,62 @@
+body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: bisque;
+  width: 98vw;
+  height: 98vh;
+  margin: 10px;
+}
+.box_column {
+  background-color: ivory;
+  margin: 10px;
+  border-radius: 10px;
+  /* height: 97%; */
+}
+
+.box_column:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 250px;
+  width: 40%;
+  max-width: 350px;
+}
+
+.box_column:nth-child(2) {
+  width: 100%;
+}
+.case {
+  margin: 10px;
+  border-radius: 10px;
+  background-color: yellow;
+}
+
+.daytime_column {
+  height: 70px;
+}
+
+.daytime_column:first-child {
+  border-bottom: 1px solid gray;
+}
+
+.stock {
+}
+
+.stock_column {
+  height: 70px;
+}
+
+.stock_column:first-child {
+  border-bottom: 1px solid gray;
+}
+
+.music_player {
+  text-align: center;
+
+  padding: 10px;
+}
+
+.bookmark {
+  height: 120px;
+}
