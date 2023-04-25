@@ -1,54 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap");
+
+.hidden {
+  display: none;
+}
+
 body {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background-color: bisque;
   width: 98vw;
   height: 98vh;
   margin: 10px;
+  font-family: "Gowun Batang", serif;
+  padding: 0px 80px;
+  box-sizing: border-box;
 }
 .box_column {
   background-color: ivory;
   margin: 10px;
+  padding-top: 10px;
   border-radius: 10px;
-  /* height: 97%; */
+  height: 500px;
+  box-sizing: border-box;
 }
 
 .box_column:first-child {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 250px;
+  min-width: 260px;
   width: 40%;
   max-width: 350px;
 }
 
 .box_column:nth-child(2) {
-  width: 100%;
+  width: 680px;
+  padding: 0px 20px;
 }
 .case {
-  margin: 10px;
+  margin: 0px 10px 10px 10px;
   border-radius: 10px;
-  background-color: yellow;
+  /* background-color: yellow; */
+}
+.daytime_column {
+  height: 80px;
+  font-weight: 600;
+  font-size: 13px;
 }
 
-.daytime_column {
-  height: 70px;
+.daytime_column span {
+  height: 30px;
+  /* background-color: red; */
 }
 
 .daytime_column:first-child {
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
 }
 
-.stock {
+.weather span {
+  font-size: 13px;
 }
 
-.stock_column {
-  height: 70px;
+.clock span {
+  display: block;
 }
 
-.stock_column:first-child {
-  border-bottom: 1px solid gray;
+.clock span:first-child {
+  font-size: 18px;
+}
+
+.clock span:last-child {
+  font-size: 24px;
+  line-height: 15px;
+  text-align: center;
+}
+
+.bookmark {
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookmark img {
+  height: 50px;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 1px 1px 10px rgb(177, 170, 170);
 }
 
 .music_player {
@@ -57,6 +97,79 @@ body {
   padding: 10px;
 }
 
-.bookmark {
-  height: 120px;
+#login-form input {
+  border: 0 solid black;
+  outline: 0;
+  background: transparent;
+  border-bottom: 2px solid black;
+  font-size: 23px;
+  padding: 10px;
+  margin-top: 20px;
+}
+#login-form input:focus {
+  border-bottom: 2px solid seagreen;
+}
+
+#login-form button {
+  outline: 0;
+  /* text-decoration: none; */
+  background-color: rgba(46, 139, 87, 0.8);
+  border: 0 solid black;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#greeting {
+  color: seagreen;
+}
+
+#todo-form input {
+  border: 0 solid black;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+  font-size: 16px;
+  padding: 7px;
+  width: 625px;
+}
+#todo-box {
+  overflow: scroll;
+  height: 300px;
+  /* background-color: blue; */
+}
+
+#todo-list ul {
+  list-style: none;
+}
+
+#todo-list li {
+  list-style: none;
+  display: flex;
+  width: 640px;
+  justify-content: space-between;
+  background-color: antiquewhite;
+  margin: 5px 0px 5px -40px;
+}
+
+#todo-list button {
+  outline: 0;
+  background-color: transparent;
+  border: 0 solid black;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#quote {
+  margin-top: 5px;
+  /* background-color: aqua; */
+  height: 50px;
+  width: 640px;
+}
+
+#quote span:last-child {
+  font-weight: 600;
+  font-size: large;
+  padding-left: 10px;
 }

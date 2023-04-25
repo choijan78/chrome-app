@@ -11,22 +11,24 @@ function onGeoOK(position) {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      const weather_kr = document.querySelector(".weather-kr span:last-child");
-      const city_kr = document.querySelector(".weather-kr span:first-child");
-      console.log(data);
+      const weather_kr = document.querySelector(".daytime_column-kr-weather");
+      const city_kr = document.querySelector(".daytime_column-kr-city");
+      // console.log(data);
       city_kr.innerText = `${data.name}, ${data.sys.country}`;
 
-      weather_kr.innerText = `${data.weather[0].main} / ${data.main.temp}℃`;
+      weather_kr.innerText = `${
+        data.weather[0].main
+      } / ${data.main.temp.toFixed(1)}℃`;
     });
   fetch(url_mty)
     .then((response) => response.json())
     .then((data) => {
-      const weather_mty = document.querySelector(
-        ".weather-mty span:last-child"
-      );
-      const city_mty = document.querySelector(".weather-mty span:first-child");
+      const weather_mty = document.querySelector(".daytime_column-mty-weather");
+      const city_mty = document.querySelector(".daytime_column-mty-city");
       city_mty.innerText = `${data.name}, ${data.sys.country}`;
-      weather_mty.innerText = `${data.weather[0].main} / ${data.main.temp}℃`;
+      weather_mty.innerText = `${
+        data.weather[0].main
+      } / ${data.main.temp.toFixed(1)}℃`;
     });
 }
 function onGeoError() {
