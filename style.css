@@ -17,9 +17,9 @@ body {
   box-sizing: border-box;
 }
 .box_column {
-  background-color: ivory;
+  background-color: rgba(255, 255, 240, 0.8);
   margin: 10px;
-  padding-top: 10px;
+  padding: 10px;
   border-radius: 10px;
   height: 550px;
   box-sizing: border-box;
@@ -40,11 +40,12 @@ body {
   position: relative;
 }
 .case {
-  margin: 0px 10px 10px 10px;
+  margin: 0px 10px;
   border-radius: 10px;
   /* background-color: yellow; */
 }
 .daytime_column {
+  margin-top: 15px;
   height: 80px;
   font-weight: 600;
   font-size: 13px;
@@ -78,11 +79,14 @@ body {
 }
 
 .bookmark {
-  height: 170px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.bookmark div {
+  margin-bottom: 15px;
 }
 
 .bookmark img {
@@ -91,9 +95,11 @@ body {
   border-radius: 20px;
   padding: 10px;
   box-shadow: 1px 1px 10px rgb(177, 170, 170);
+  /* margin-left: 10px; */
 }
 
 .music_player {
+  /* margin-top: 40px; */
   text-align: center;
 
   padding: 10px;
@@ -151,8 +157,14 @@ body {
   display: flex;
   width: 640px;
   justify-content: space-between;
-  background-color: antiquewhite;
+  background-color: rgb(250, 235, 215);
   margin: 5px 0px 5px -40px;
+  border-radius: 5px;
+  padding: 3px 0px;
+}
+
+#todo-list li div:nth-child(2) {
+  margin-top: -2px;
 }
 
 input[type="checkbox"]:checked + label {
@@ -169,7 +181,7 @@ input[type="checkbox"]:checked + label {
 
 #quote {
   margin-top: 5px;
-  background-color: aqua;
+  /* background-color: aqua; */
   position: absolute;
   bottom: 20px;
   width: 640px;
