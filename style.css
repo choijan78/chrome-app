@@ -4,6 +4,12 @@
   display: none;
 }
 
+.center {
+  position: absolute;
+  top: 50px;
+  left: 130px;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -91,9 +97,9 @@ body {
 
 .bookmark img {
   /* margin: 0px 20px; */
-  height: 50px;
+  height: 60px;
   border-radius: 20px;
-  padding: 10px;
+  padding: 5px;
   box-shadow: 1px 1px 10px rgb(177, 170, 170);
   /* margin-left: 10px; */
 }
@@ -113,12 +119,14 @@ body {
   font-size: 23px;
   padding: 10px;
   margin-top: 20px;
+  width: 320px;
 }
 #login-form input:focus {
   border-bottom: 2px solid seagreen;
 }
 
-#login-form button {
+#login-form button,
+.logout_btn {
   outline: 0;
   /* text-decoration: none; */
   background-color: rgba(46, 139, 87, 0.8);
@@ -131,6 +139,16 @@ body {
 
 #greeting {
   color: seagreen;
+  position: relative;
+}
+
+.logout_btn {
+  border-radius: 7px;
+  font-size: 3px;
+  padding: 3px;
+  position: absolute;
+  top: 40px;
+  right: 20px;
 }
 
 #todo-form input {
