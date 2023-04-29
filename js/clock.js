@@ -19,6 +19,11 @@ function getCurrentClock() {
       2,
       "0"
     )} : ${minutes} : ${seconds}`;
+  } else if (hours === 12) {
+    current_time.innerText = `PM ${String(hours).padStart(
+      2,
+      "0"
+    )} : ${minutes} : ${seconds}`;
   } else {
     current_time.innerText = `PM ${String(hours - 12).padStart(
       2,
@@ -43,7 +48,7 @@ function getLocalClock(utc_diff) {
   const seconds = String(mty_time.getSeconds()).padStart(2, "0");
 
   local_date.innerText = `${year}. ${month}. ${date} ${weekday[day]}`;
-  if (hours < 12) {
+  if (hours <= 12) {
     local_time.innerText = `AM ${String(hours).padStart(
       2,
       "0"

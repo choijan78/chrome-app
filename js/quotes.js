@@ -830,8 +830,7 @@ const quotes = [
   },
   { en: "254. Keep it simple.", kr: "꾸미지 마세요." },
   {
-    en: "255. Purchase gas from the neighborhood gas station even if it costs more.",
-    kr: "Next winter when it's six degrees and your car won't start, you'll be glad they know you.",
+    en: "255. Purchase gas from the neighborhood gas station even if it costs more. Next winter when it's six degrees and your car won't start, you'll be glad they know you.",
     kr: "값이 다소 비싸더라도 이웃의 주유소에서 기름을 넣으세요. 다음해 겨울 , 기온은 화씨 6도, 자가용이 꿈쩍도 않을 때 그들이 당신을 안다는 것이 반가울 겁니다.",
   },
   { en: "256. Don't jaywalk.", kr: "무단횡단하지 마세요." },
